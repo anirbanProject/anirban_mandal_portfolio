@@ -35,91 +35,91 @@
 
 <!-- ═══ STRUCTURED DATA – Person + Website ══════════════════════════════ -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
     {
-      "@type": "Person",
-      "@id": "https://anirbanmandal.dev/#person",
-      "name": "Anirban Mandal",
-      "jobTitle": "Software Developer",
-      "description": "Software Developer with 4+ years of experience building scalable enterprise web applications, REST APIs, and government digital systems using ASP.NET Core, C#, SQL Server, and React.js.",
-      "url": "https://anirbanmandal.dev/",
-      "image": "https://anirbanmandal.dev/avatar.png",
-      "email": "anirbanmandal666@gmail.com",
-      "telephone": "+918131954199",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Udaipur",
-        "addressRegion": "Tripura",
-        "addressCountry": "IN"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/anirban-mandal-8aa34a1ba",
-        "https://github.com/anirbanProject"
-      ],
-      "knowsAbout": [
-        "ASP.NET Core", "C#", ".NET MVC", "Web API", "REST API",
-        "SQL Server", "Stored Procedures", "Entity Framework", "ADO.NET",
-        "React.js", "Angular JS", "JavaScript", "HTML", "CSS",
-        "WebForms", "Visual Basic", ".NET Core", "CI/CD Pipeline",
-        "Payment Gateway Integration", "SMS Gateway Integration",
-        "GitHub", "Git", "Windows IIS", "Azure"
-      ],
-      "hasCredential": [
+      "@context": "https://schema.org",
+      "@graph": [
         {
-          "@type": "EducationalOccupationalCredential",
-          "name": "SQL (Basic)",
-          "credentialCategory": "Certificate",
-          "recognizedBy": { "@type": "Organization", "name": "HackerRank" }
+          "@type": "Person",
+          "@id": "https://anirbanmandal.dev/#person",
+          "name": "Anirban Mandal",
+          "jobTitle": "Software Developer",
+          "description": "Software Developer with 4+ years of experience building scalable enterprise web applications, REST APIs, and government digital systems using ASP.NET Core, C#, SQL Server, and React.js.",
+          "url": "https://anirbanmandal.dev/",
+          "image": "https://anirbanmandal.dev/avatar.png",
+          "email": "anirbanmandal666@gmail.com",
+          "telephone": "+918131954199",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Udaipur",
+            "addressRegion": "Tripura",
+            "addressCountry": "IN"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/anirban-mandal-8aa34a1ba",
+            "https://github.com/anirbanProject"
+          ],
+          "knowsAbout": [
+            "ASP.NET Core", "C#", ".NET MVC", "Web API", "REST API",
+            "SQL Server", "Stored Procedures", "Entity Framework", "ADO.NET",
+            "React.js", "Angular JS", "JavaScript", "HTML", "CSS",
+            "WebForms", "Visual Basic", ".NET Core", "CI/CD Pipeline",
+            "Payment Gateway Integration", "SMS Gateway Integration",
+            "GitHub", "Git", "Windows IIS", "Azure"
+          ],
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "SQL (Basic)",
+              "credentialCategory": "Certificate",
+              "recognizedBy": { "@type": "Organization", "name": "HackerRank" }
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "C# (Basic)",
+              "credentialCategory": "Certificate",
+              "recognizedBy": { "@type": "Organization", "name": "HackerRank" }
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "AWS Academy Graduate – Cloud Architecting",
+              "credentialCategory": "Certificate",
+              "recognizedBy": { "@type": "Organization", "name": "Amazon Web Services" }
+            }
+          ],
+          "alumniOf": [
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Kalinga Institute of Industrial Technology",
+              "url": "https://kiit.ac.in/"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "Udaipur, Gomati District Polytechnic",
+              "url": "https://gdp.nic.in/"
+            }
+          ],
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Directorate of Information Technology, Tripura",
+            "url": "https://dit.tripura.gov.in/"
+          }
         },
         {
-          "@type": "EducationalOccupationalCredential",
-          "name": "C# (Basic)",
-          "credentialCategory": "Certificate",
-          "recognizedBy": { "@type": "Organization", "name": "HackerRank" }
+          "@type": "WebSite",
+          "@id": "https://anirbanmandal.dev/#website",
+          "url": "https://anirbanmandal.dev/",
+          "name": "Anirban Mandal — Software Developer Portfolio",
+          "description": "Portfolio of Anirban Mandal, a Software Developer from Tripura, India.",
+          "author": { "@id": "https://anirbanmandal.dev/#person" }
         },
         {
-          "@type": "EducationalOccupationalCredential",
-          "name": "AWS Academy Graduate – Cloud Architecting",
-          "credentialCategory": "Certificate",
-          "recognizedBy": { "@type": "Organization", "name": "Amazon Web Services" }
+          "@type": "ProfilePage",
+          "url": "https://anirbanmandal.dev/",
+          "name": "Anirban Mandal — Software Developer",
+          "mainEntity": { "@id": "https://anirbanmandal.dev/#person" }
         }
-      ],
-      "alumniOf": [
-        {
-          "@type": "CollegeOrUniversity",
-          "name": "Kalinga Institute of Industrial Technology",
-          "url": "https://kiit.ac.in/"
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "Udaipur, Gomati District Polytechnic",
-          "url": "https://gdp.nic.in/"
-        }
-      ],
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Directorate of Information Technology, Tripura",
-        "url": "https://dit.tripura.gov.in/"
-      }
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://anirbanmandal.dev/#website",
-      "url": "https://anirbanmandal.dev/",
-      "name": "Anirban Mandal — Software Developer Portfolio",
-      "description": "Portfolio of Anirban Mandal, a Software Developer from Tripura, India.",
-      "author": { "@id": "https://anirbanmandal.dev/#person" }
-    },
-    {
-      "@type": "ProfilePage",
-      "url": "https://anirbanmandal.dev/",
-      "name": "Anirban Mandal — Software Developer",
-      "mainEntity": { "@id": "https://anirbanmandal.dev/#person" }
+      ]
     }
-  ]
-}
 </script>
 
 <!-- ═══ PERFORMANCE HINTS ════════════════════════════════════════════════ -->
@@ -712,6 +712,16 @@
       <div class="service-icon">🚀</div>
       <div class="service-title">Deployment & Maintenance</div>
       <p class="service-desc">IIS/Azure deployment, system maintenance, and monitoring. I keep your production systems healthy and up-to-date.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🌐</div>
+      <div class="service-title">Website Development</div>
+      <p class="service-desc">End-to-end website development — from responsive landing pages to complex multi-tier web portals — using modern technologies like React.js, ASP.NET Core, and CSS frameworks for a polished, performant result.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">📱</div>
+      <div class="service-title">Mobile App Development</div>
+      <p class="service-desc">Cross-platform and native mobile application development with robust backend API support, push notifications, and seamless third-party integrations — built for reliability on both Android and iOS.</p>
     </div>
   </div>
 </section>
