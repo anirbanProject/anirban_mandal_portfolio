@@ -1,0 +1,7 @@
+# Logs and caches
+*.log
+contact-submissions.jsonl
+*.zip
+node_modules/
+.DS_Store
+Thumbs.db

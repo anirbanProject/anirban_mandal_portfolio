@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anirban Mandal | Software Engineer & Full Stack .NET Developer</title>
+  <meta name="description" content="Portfolio of Anirban Mandal – Software Engineer, Full Stack .NET Developer, and AI/ML Career Aspirant with 3+ years experience in enterprise systems and government IT.">
+  <meta name="author" content="Anirban Mandal">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Anirban Mandal | Software Engineer Portfolio">
+  <meta property="og:description" content="Cinematic scroll-scrubbed interactive portfolio of Anirban Mandal.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Syne / Plus Jakarta Sans / Cormorant Garamond / Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       CANVAS BACKGROUND: SCROLL-CONTROLLED FRAME SCRUBBING ENGINE
+       ========================================================================= -->
+  <div class="canvas-viewport-container" aria-hidden="true">
+    <canvas id="scroll-frame-canvas"></canvas>
+  </div>
+
+  <!-- Loading Progress Bar -->
+  <div id="frame-loader-bar" class="frame-loader-bar">
+    <div id="frame-loader-progress" class="frame-loader-progress"></div>
+  </div>
+
+  <!-- =========================================================================
+       FIXED TOP NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#home" class="brand-logo" aria-label="Anirban Mandal Home">
+        <span class="brand-monogram">AM</span>
+        <span class="brand-name">ANIRBAN MANDAL</span>
+        <span class="brand-status-dot" title="Available for opportunities"></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="nav-links" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Action & Mobile Toggle -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-nav-cta">
+          <span>Start a Project</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-inner">
+      <button class="drawer-close" id="drawer-close" aria-label="Close Navigation">&times;</button>
+      <div class="drawer-brand">
+        <span class="brand-monogram">AM</span>
+        <h3>ANIRBAN MANDAL</h3>
+        <p>Software Engineer | Full Stack .NET</p>
+      </div>
+      <nav class="drawer-nav">
+        <a href="#home" class="drawer-link">Home</a>
+        <a href="#about" class="drawer-link">About Me</a>
+        <a href="#experience" class="drawer-link">Experience</a>
+        <a href="#skills" class="drawer-link">Skills & Stack</a>
+        <a href="#projects" class="drawer-link">Projects</a>
+        <a href="#education" class="drawer-link">Education</a>
+        <a href="#contact" class="drawer-link">Contact</a>
+      </nav>
+      <div class="drawer-footer">
+        <a href="mailto:anirbanmandal666@gmail.com" class="drawer-email">anirbanmandal666@gmail.com</a>
+        <p>Udaipur, Tripura, India</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       SCROLL STAGE CONTENT WRAPPER
+       ========================================================================= -->
+  <main class="portfolio-stage" id="main-content">
+
+    <!-- =======================================================================
+         SECTION 1: HERO SECTION
+         ======================================================================= -->
+    <section class="stage-section" id="home">
+      <!-- Watermarked Reference Branding Banner -->
+      <div class="stage-top-badge">
+        <h2 class="hero-watermark-title">Portfolio</h2>
+        <span class="hero-script-overlay">Anirban Mandal</span>
+      </div>
+
+      <!-- Main Floating Stadium Card -->
+      <div class="stadium-card hero-stadium-card">
+        <div class="card-interior-grid">
+          
+          <div class="hero-text-content">
+            <div class="overline-badge">
+              <span class="pulse-dot"></span>
+              <span>SOFTWARE ENGINEER • FULL STACK .NET • AI/ML</span>
+            </div>
+
+            <h1 class="hero-headline">
+              ANIRBAN MANDAL
+            </h1>
+
+            <p class="hero-italic-subtitle">
+              Building scalable enterprise web applications, intelligent solutions, and meaningful digital experiences.
+            </p>
+
+            <p class="hero-body-desc">
+              Full Stack Developer with 3+ years of professional engineering experience contributing to high-impact government IT solutions, enterprise ASP.NET architectures, and modern web applications.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary-orange">
+                <span>Explore My Work</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+              </a>
+              <a href="#contact" class="btn btn-outline-warm">
+                <span>Contact Me</span>
+              </a>
+              <a href="https://drive.google.com/drive/folders/1lihz6IWinqRAT8lC7XFzYQ8Uj5q55fNK?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-glass-dark" aria-label="Download Anirban Mandal's Resume (opens Google Drive in new tab)">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <span>Download Resume</span>
+              </a>
+            </div>
+
+            <!-- Quick Metrics Row -->
+            <div class="hero-metrics-strip">
+              <div class="metric-item">
+                <span class="metric-num">3+</span>
+                <span class="metric-lbl">Years Experience</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-num">Govt</span>
+                <span class="metric-lbl">Enterprise Projects</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-num">.NET</span>
+                <span class="metric-lbl">Full Stack Core</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-num">AI/ML</span>
+                <span class="metric-lbl">Career Aspirant</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Quick Links in Hero -->
+          <div class="hero-social-sidebar">
+            <a href="https://linkedin.com/in/anirban-mandal-8aa34a1ba" target="_blank" rel="noopener noreferrer" class="social-chip" title="LinkedIn Profile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:anirbanmandal666@gmail.com" class="social-chip" title="Direct Email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+              <span>Email</span>
+            </a>
+            <a href="tel:8131954199" class="social-chip" title="Direct Call">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 8131954199</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Frame Scrubbing Hint Indicator -->
+        <div class="card-bottom-bar">
+          <span class="card-footer-email">anirbanmandal666@gmail.com</span>
+          <div class="scroll-scrub-indicator">
+            <span class="scrub-label">Scroll to scrub cinematic sequence</span>
+            <span class="scrub-arrow">➔</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         SECTION 2: ABOUT ME SECTION (INSPIRED DIRECTLY BY REFERENCE SCREENSHOT 2)
+         ======================================================================= -->
+    <section class="stage-section" id="about">
+      <div class="stage-top-badge">
+        <h2 class="hero-watermark-title">About.</h2>
+        <span class="hero-script-overlay">Who I Am</span>
+      </div>
+
+      <div class="stadium-card about-stadium-card">
+        <!-- Vertical Accent Text on Right Border -->
+        <div class="card-vertical-spine">
+          <span>FULL STACK .NET DEVELOPER</span>
+        </div>
+
+        <div class="about-card-inner-grid">
+          
+          <!-- Left Column: TECH DNA Card -->
+          <div class="about-sub-card dna-box">
+            <h3 class="sub-card-title">TECHNICAL DNA</h3>
+            <div class="dna-stats-row">
+              <div class="dna-stat">
+                <span class="dna-num">3+</span>
+                <span class="dna-lbl">Years Experience</span>
+              </div>
+              <div class="dna-stat">
+                <span class="dna-num">Govt</span>
+                <span class="dna-lbl">IT Projects</span>
+              </div>
+            </div>
+            <div class="dna-tagline">Engineered for reliability & scale.</div>
+            <p class="dna-desc">
+              I am a Software Developer with 3+ years of hands-on experience in full-stack engineering, enterprise architectures, and REST API development.
+            </p>
+            <p class="dna-desc">
+              I specialize in ASP.NET, C#, .NET Core, SQL Server, and React.js, with demonstrated success contributing to government IT initiatives under the Directorate of Information Technology, Government of Tripura.
+            </p>
+            <p class="dna-desc">
+              Passionate about Artificial Intelligence and Machine Learning, I am actively building AI-augmented workflows and intelligent enterprise systems.
+            </p>
+          </div>
+
+          <!-- Center Column: Key Highlights -->
+          <div class="about-center-feature">
+            <div class="character-glow-orb"></div>
+            <div class="feature-speech-bubble">
+              <span class="bubble-tag">CORE PHILOSOPHY</span>
+              <p>"Clean architecture, robust database indexing, and seamless API integration that powers real-world citizen services."</p>
+            </div>
+            <div class="highlights-pill-list">
+              <div class="highlight-pill"><span class="pill-check">✓</span> 3+ Years Enterprise Experience</div>
+              <div class="highlight-pill"><span class="pill-check">✓</span> Full Stack .NET & Modern JS</div>
+              <div class="highlight-pill"><span class="pill-check">✓</span> Government IT Portals</div>
+              <div class="highlight-pill"><span class="pill-check">✓</span> Database Optimization Specialist</div>
+              <div class="highlight-pill"><span class="pill-check">✓</span> AI/ML Career Aspirations</div>
+            </div>
+          </div>
+
+          <!-- Right Column: Skills & Stack Overview (Reference Screenshot 2 Right Side) -->
+          <div class="about-right-panel">
+            <div class="about-sub-card skills-spec-box">
+              <h4 class="mini-spec-title">CORE SKILLS</h4>
+              <ul class="spec-list">
+                <li><span>•</span> Enterprise Web Application Architecture</li>
+                <li><span>•</span> ASP.NET Core RESTful APIs</li>
+                <li><span>•</span> SQL Server Stored Procedures & Tuning</li>
+                <li><span>•</span> Payment & SMS Gateway Integrations</li>
+                <li><span>•</span> Business Requirements & Stakeholder Collaboration</li>
+                <li><span>•</span> Full SDLC, Testing & Production IIS Deployment</li>
+              </ul>
+            </div>
+
+            <div class="about-sub-card software-badges-box">
+              <h4 class="mini-spec-title">PRIMARY SOFTWARE & TOOLS</h4>
+              <div class="badge-icon-grid">
+                <div class="badge-icon-chip">
+                  <span class="badge-symbol">C#</span>
+                  <span class="badge-name">C# .NET</span>
+                </div>
+                <div class="badge-icon-chip">
+                  <span class="badge-symbol">Core</span>
+                  <span class="badge-name">.NET Core</span>
+                </div>
+                <div class="badge-icon-chip">
+                  <span class="badge-symbol">SQL</span>
+                  <span class="badge-name">SQL Server</span>
+                </div>
+                <div class="badge-icon-chip">
+                  <span class="badge-symbol">Re</span>
+                  <span class="badge-name">React.js</span>
+                </div>
+                <div class="badge-icon-chip">
+                  <span class="badge-symbol">API</span>
+                  <span class="badge-name">REST APIs</span>
+                </div>
+                <div class="badge-icon-chip">
+                  <span class="badge-symbol">IIS</span>
+                  <span class="badge-name">Windows IIS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card-bottom-bar">
+          <span class="card-footer-email">anirbanmandal666@gmail.com</span>
+          <div class="scroll-scrub-indicator">
+            <span class="scrub-label">Swip ➔</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         SECTION 3: PROFESSIONAL EXPERIENCE (INSPIRED BY SCREENSHOT 3)
+         ======================================================================= -->
+    <section class="stage-section" id="experience">
+      <div class="stage-top-badge">
+        <h2 class="hero-watermark-title">Experience</h2>
+        <span class="hero-script-overlay">Career Journey</span>
+      </div>
+
+      <div class="stadium-card experience-stadium-card">
+        <div class="section-card-header">
+          <span class="section-overline">CAREER TRACK RECORD</span>
+          <h2 class="section-headline">
+            Where I Have Made an <span class="serif-italic-accent">Impact</span>
+          </h2>
+          <p class="section-subtitle">
+            Demonstrated engineering contributions across state government IT and enterprise application systems.
+          </p>
+        </div>
+
+        <!-- 3-Column Experience Cards (Inspired by Reference Screenshot 3 Testimonial Cards) -->
+        <div class="experience-card-grid">
+          
+          <!-- Experience Card 1 -->
+          <div class="exp-card highlight-card">
+            <div class="exp-quote-symbol">“</div>
+            <div class="exp-badge-row">
+              <span class="exp-duration">Dec 2025 – Present</span>
+              <span class="exp-status active-pulse">Current Role</span>
+            </div>
+            <h3 class="exp-role">Full Stack Developer</h3>
+            <h4 class="exp-org">Directorate of Information Technology</h4>
+            <span class="exp-dept">Government of Tripura</span>
+            <div class="exp-project-name">Project: Software Development & Maintenance Project</div>
+            
+            <p class="exp-summary">
+              Designing, developing, and maintaining mission-critical enterprise web applications using ASP.NET and SQL Server. Developing and optimizing high-throughput RESTful APIs.
+            </p>
+            <ul class="exp-bullets">
+              <li>Integrated payment gateways and automated SMS gateway notification services.</li>
+              <li>Participated in business requirement analysis and enterprise technical design.</li>
+              <li>Performed database query optimization, indexing, testing, and Windows IIS production deployments.</li>
+            </ul>
+
+            <div class="tech-pill-row">
+              <span class="tech-pill">ASP.NET</span>
+              <span class="tech-pill">C#</span>
+              <span class="tech-pill">SQL Server</span>
+              <span class="tech-pill">Windows IIS</span>
+              <span class="tech-pill">REST APIs</span>
+            </div>
+          </div>
+
+          <!-- Experience Card 2 -->
+          <div class="exp-card">
+            <div class="exp-quote-symbol">“</div>
+            <div class="exp-badge-row">
+              <span class="exp-duration">Jan 2023 – Dec 2025</span>
+              <span class="exp-status">2 Years</span>
+            </div>
+            <h3 class="exp-role">Software Developer</h3>
+            <h4 class="exp-org">Directorate of Information Technology</h4>
+            <span class="exp-dept">CM Helpline Project • Govt of Tripura</span>
+            <a href="https://dit.tripura.gov.in/" target="_blank" rel="noopener noreferrer" class="exp-link">dit.tripura.gov.in ↗</a>
+
+            <p class="exp-summary">
+              Enhanced and actively maintained the CM Helpline Portal, facilitating citizen grievance redressal across Tripura state departments.
+            </p>
+            <ul class="exp-bullets">
+              <li>Formulated complex SQL queries, stored procedures, and dynamic analytical reports for executives.</li>
+              <li>Engineered ASP.NET Core Web APIs for mobile application synchronization.</li>
+              <li>Integrated SMS gateway services for automated grievance lifecycle tracking.</li>
+            </ul>
+
+            <div class="tech-pill-row">
+              <span class="tech-pill">ASP.NET Web Forms</span>
+              <span class="tech-pill">ASP.NET Core API</span>
+              <span class="tech-pill">C#</span>
+              <span class="tech-pill">SSMS</span>
+              <span class="tech-pill">Postman</span>
+            </div>
+          </div>
+
+          <!-- Experience Card 3 -->
+          <div class="exp-card">
+            <div class="exp-quote-symbol">“</div>
+            <div class="exp-badge-row">
+              <span class="exp-duration">4 Months Internship</span>
+              <span class="exp-status">Foundation</span>
+            </div>
+            <h3 class="exp-role">Associate Software Developer</h3>
+            <h4 class="exp-org">SHAPE India</h4>
+            <span class="exp-dept">Full Stack Web Engineering</span>
+            <a href="https://www.shapeindia.in/" target="_blank" rel="noopener noreferrer" class="exp-link">shapeindia.in ↗</a>
+
+            <p class="exp-summary">
+              Developed and maintained modern web applications utilizing Node.js and React.js, collaborating directly with development teams on full-stack feature delivery.
+            </p>
+            <ul class="exp-bullets">
+              <li>Implemented interactive frontend features using React components and modern CSS.</li>
+              <li>Developed REST endpoints and asynchronous backend business logic with Node.js.</li>
+              <li>Participated in code reviews, bug fixes, and agile team standups.</li>
+            </ul>
+
+            <div class="tech-pill-row">
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">React.js</span>
+              <span class="tech-pill">JavaScript ES6+</span>
+              <span class="tech-pill">Git</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card-bottom-bar">
+          <span class="card-footer-email">anirbanmandal666@gmail.com</span>
+          <div class="scroll-scrub-indicator">
+            <span class="scrub-label">Scroll to Continue ➔</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         SECTION 4: TECHNICAL SKILLS
+         ======================================================================= -->
+    <section class="stage-section" id="skills">
+      <div class="stage-top-badge">
+        <h2 class="hero-watermark-title">Stack</h2>
+        <span class="hero-script-overlay">Technical Skills</span>
+      </div>
+
+      <div class="stadium-card skills-stadium-card">
+        <div class="section-card-header">
+          <span class="section-overline">CAPABILITIES & TOOLBOX</span>
+          <h2 class="section-headline">
+            Architected for <span class="serif-italic-accent">Scalability</span>
+          </h2>
+          <p class="section-subtitle">
+            Enterprise-tested technical proficiencies across backend architectures, databases, and frontend solutions.
+          </p>
+        </div>
+
+        <!-- Categorized Skills Grid -->
+        <div class="skills-category-grid">
+          
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon">⚙️</div>
+              <h3>Backend & Architecture</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="badge-tag">ASP.NET Core</span>
+              <span class="badge-tag">C#</span>
+              <span class="badge-tag">.NET MVC</span>
+              <span class="badge-tag">ASP.NET Web Forms</span>
+              <span class="badge-tag">RESTful Web API</span>
+              <span class="badge-tag">Node.js</span>
+              <span class="badge-tag">Entity Framework</span>
+              <span class="badge-tag">ADO.NET</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon">🗄️</div>
+              <h3>Database Engineering</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="badge-tag">Microsoft SQL Server</span>
+              <span class="badge-tag">Complex SQL Queries</span>
+              <span class="badge-tag">Stored Procedures</span>
+              <span class="badge-tag">Database Optimization</span>
+              <span class="badge-tag">Index Tuning</span>
+              <span class="badge-tag">SSMS</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon">💻</div>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="badge-tag">React.js</span>
+              <span class="badge-tag">JavaScript (ES6+)</span>
+              <span class="badge-tag">HTML5 & Modern CSS3</span>
+              <span class="badge-tag">AngularJS</span>
+              <span class="badge-tag">Responsive UI/UX</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon">🔗</div>
+              <h3>APIs & Third-Party Integration</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="badge-tag">REST API Development</span>
+              <span class="badge-tag">Payment Gateway Integration</span>
+              <span class="badge-tag">SMS Gateway Integration</span>
+              <span class="badge-tag">Postman API Testing</span>
+              <span class="badge-tag">JSON / XML Processing</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon">🚀</div>
+              <h3>DevOps, Tools & Cloud</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="badge-tag">Git & GitHub</span>
+              <span class="badge-tag">Windows Server IIS</span>
+              <span class="badge-tag">CI/CD Pipelines</span>
+              <span class="badge-tag">Application Deployment</span>
+              <span class="badge-tag">AWS Cloud Architecting</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon">🧠</div>
+              <h3>AI/ML Career Focus</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="badge-tag">Artificial Intelligence</span>
+              <span class="badge-tag">Machine Learning</span>
+              <span class="badge-tag">AI-Powered App Dev</span>
+              <span class="badge-tag">LLM & Semantic Integration</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card-bottom-bar">
+          <span class="card-footer-email">anirbanmandal666@gmail.com</span>
+          <div class="scroll-scrub-indicator">
+            <span class="scrub-label">Scroll Down ➔</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         SECTION 5: FEATURED PROJECTS
+         ======================================================================= -->
+    <section class="stage-section" id="projects">
+      <div class="stage-top-badge">
+        <h2 class="hero-watermark-title">Projects</h2>
+        <span class="hero-script-overlay">Selected Work</span>
+      </div>
+
+      <div class="stadium-card projects-stadium-card">
+        <div class="section-card-header">
+          <span class="section-overline">ENTERPRISE DELIVERABLES</span>
+          <h2 class="section-headline">
+            Featured <span class="serif-italic-accent">Engineering Projects</span>
+          </h2>
+          <p class="section-subtitle">
+            High-availability web applications built for government administration and citizen engagement.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1 -->
+          <div class="project-showcase-card">
+            <div class="project-visual-header">
+              <div class="project-num-tag">01</div>
+              <div class="project-category">Government IT • Enterprise Portal</div>
+            </div>
+            <h3 class="project-title">Government Enterprise Applications</h3>
+            <p class="project-overview">
+              Robust enterprise web application suite engineered for the Directorate of Information Technology, Government of Tripura. Manages administrative workflows, departmental coordination, and automated record-keeping with high security standards.
+            </p>
+            <div class="project-tech-stack">
+              <span>ASP.NET</span>
+              <span>C#</span>
+              <span>SQL Server</span>
+              <span>Windows IIS</span>
+              <span>REST APIs</span>
+            </div>
+            <div class="project-contributions">
+              <strong>Key Contributions:</strong> Architected RESTful services, designed optimized SQL tables and stored procedures, integrated external payment gateways and SMS notification services, and ensured 99.9% uptime on Windows IIS.
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-showcase-card highlight-card">
+            <div class="project-visual-header">
+              <div class="project-num-tag">02</div>
+              <div class="project-category">Citizen Redressal • High Traffic</div>
+            </div>
+            <h3 class="project-title">CM Helpline Portal</h3>
+            <p class="project-overview">
+              The flagship public grievance redressal portal for the Chief Minister's Office, Government of Tripura. Processes thousands of citizen petitions, tracking resolution workflows across various state government departments.
+            </p>
+            <div class="project-tech-stack">
+              <span>ASP.NET Web Forms</span>
+              <span>ASP.NET Core Web API</span>
+              <span>C#</span>
+              <span>SQL Server</span>
+              <span>Postman</span>
+            </div>
+            <div class="project-contributions">
+              <strong>Key Contributions:</strong> Authored analytical stored procedures and executive reporting dashboards, developed mobile-backend ASP.NET Core APIs, and configured automated SMS status alerts for citizens.
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-showcase-card">
+            <div class="project-visual-header">
+              <div class="project-num-tag">03</div>
+              <div class="project-category">AI/ML • Innovation Lab</div>
+            </div>
+            <h3 class="project-title">AI-Powered Applications & Solutions</h3>
+            <p class="project-overview">
+              Prototyping and developing intelligent solutions that bridge enterprise databases with modern Artificial Intelligence capabilities, focusing on semantic data retrieval, predictive analytics, and automated decision-support assistants.
+            </p>
+            <div class="project-tech-stack">
+              <span>Python</span>
+              <span>C# .NET</span>
+              <span>Machine Learning</span>
+              <span>RESTful APIs</span>
+              <span>Vector Search</span>
+            </div>
+            <div class="project-contributions">
+              <strong>Key Contributions:</strong> Designing modular API adapters connecting enterprise SQL datasets to LLM reasoning endpoints, evaluating embedding performance, and building interactive web UIs.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card-bottom-bar">
+          <span class="card-footer-email">anirbanmandal666@gmail.com</span>
+          <div class="scroll-scrub-indicator">
+            <span class="scrub-label">Scroll to Education ➔</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         SECTION 6: EDUCATION & CERTIFICATIONS
+         ======================================================================= -->
+    <section class="stage-section" id="education">
+      <div class="stage-top-badge">
+        <h2 class="hero-watermark-title">Education</h2>
+        <span class="hero-script-overlay">Academic Foundations</span>
+      </div>
+
+      <div class="stadium-card education-stadium-card">
+        <div class="section-card-header">
+          <span class="section-overline">ACADEMICS & CREDENTIALS</span>
+          <h2 class="section-headline">
+            Education & <span class="serif-italic-accent">Certifications</span>
+          </h2>
+          <p class="section-subtitle">
+            Formal engineering degree and industry certifications validating cloud and coding proficiencies.
+          </p>
+        </div>
+
+        <div class="edu-cert-split-grid">
+          
+          <!-- Education Column -->
+          <div class="edu-column">
+            <h3 class="column-heading">Degree & Diplomas</h3>
+            
+            <div class="edu-card">
+              <div class="edu-period">July 2019 – May 2022</div>
+              <h4 class="edu-degree">B.Tech – Computer Science & Engineering</h4>
+              <h5 class="edu-institution">Kalinga Institute of Industrial Technology (KIIT)</h5>
+              <p class="edu-location">Bhubaneswar, Odisha, India</p>
+              <a href="https://kiit.ac.in/" target="_blank" rel="noopener noreferrer" class="edu-link">kiit.ac.in ↗</a>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-period">June 2016 – June 2019</div>
+              <h4 class="edu-degree">Diploma – Computer Science & Technology</h4>
+              <h5 class="edu-institution">Gomati District Polytechnic</h5>
+              <p class="edu-location">Udaipur, Tripura, India</p>
+              <a href="https://gdp.nic.in/" target="_blank" rel="noopener noreferrer" class="edu-link">gdp.nic.in ↗</a>
+            </div>
+          </div>
+
+          <!-- Certifications & Competencies Column -->
+          <div class="cert-column">
+            <h3 class="column-heading">Verified Certifications</h3>
+            
+            <div class="cert-badge-row">
+              <div class="cert-item">
+                <div class="cert-badge-icon">☁️</div>
+                <div class="cert-details">
+                  <h4>AWS Academy Graduate</h4>
+                  <p>AWS Academy Cloud Architecting</p>
+                  <span class="cert-issuer">Amazon Web Services</span>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-badge-icon">🗃️</div>
+                <div class="cert-details">
+                  <h4>SQL Basic Certification</h4>
+                  <p>Relational Queries & Optimization</p>
+                  <span class="cert-issuer">HackerRank Verified</span>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-badge-icon">⚡</div>
+                <div class="cert-details">
+                  <h4>C# Competency Certification</h4>
+                  <p>Object-Oriented Architecture & Algorithms</p>
+                  <span class="cert-issuer">HackerRank Verified</span>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="column-heading" style="margin-top: 1.5rem;">Spoken Languages</h3>
+            <div class="languages-pills">
+              <span class="lang-pill"><strong>English</strong> — Professional</span>
+              <span class="lang-pill"><strong>Bengali</strong> — Native / Professional</span>
+              <span class="lang-pill"><strong>Hindi</strong> — Intermediate</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card-bottom-bar">
+          <span class="card-footer-email">anirbanmandal666@gmail.com</span>
+          <div class="scroll-scrub-indicator">
+            <span class="scrub-label">Scroll to Contact ➔</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         SECTION 7: CONTACT ME (INSPIRED DIRECTLY BY REFERENCE SCREENSHOT 1)
+         ======================================================================= -->
+    <section class="stage-section" id="contact">
+      <div class="stage-top-badge">
+        <h2 class="hero-watermark-title">Portfolio</h2>
+        <span class="hero-script-overlay">Anirban Mandal</span>
+      </div>
+
+      <!-- Main Contact Stadium Card (Screenshot 1 Exact Layout) -->
+      <div class="stadium-card contact-stadium-card">
+        
+        <div class="contact-card-inner-grid">
+          
+          <!-- Left Visual Avatar & Tone Area -->
+          <div class="contact-left-visual">
+            <div class="contact-avatar-orb">
+              <img src="./assets/anirban-mandal-profile.jpg" alt="Anirban Mandal - Software Engineer" class="contact-avatar-img">
+            </div>
+            <div class="contact-quote-badge">
+              <span class="avatar-role-tag">SOFTWARE ENGINEER</span>
+              <p>"Ready to build high-performance web applications or collaborate on exciting software projects."</p>
+            </div>
+          </div>
+
+          <!-- Right Content & Contact Matrix (Screenshot 1 Exact Composition) -->
+          <div class="contact-right-content">
+            <span class="contact-mini-tag">CONTACT</span>
+            <h2 class="contact-main-heading">
+              Let's work <span class="serif-italic-accent">together</span>
+            </h2>
+            <p class="contact-sub-desc">
+              Ready to build something amazing together? Tell me about your project, development opportunity, or enterprise requirements.
+            </p>
+
+            <a href="#contact-form-anchor" class="btn btn-primary-orange contact-start-btn">
+              <span>Start a Project</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+
+            <!-- 2x2 Grid of Contact Chips (Screenshot 1 Signature Element) -->
+            <div class="contact-chips-grid">
+              
+              <a href="mailto:anirbanmandal666@gmail.com" class="contact-chip-item">
+                <div class="chip-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+                </div>
+                <div class="chip-text">
+                  <span class="chip-label">EMAIL</span>
+                  <span class="chip-val">anirbanmandal666@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:8131954199" class="contact-chip-item">
+                <div class="chip-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="chip-text">
+                  <span class="chip-label">PHONE / DIRECT CALL</span>
+                  <span class="chip-val">+91 8131954199</span>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/anirban-mandal-8aa34a1ba" target="_blank" rel="noopener noreferrer" class="contact-chip-item">
+                <div class="chip-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </div>
+                <div class="chip-text">
+                  <span class="chip-label">LINKEDIN</span>
+                  <span class="chip-val">/in/anirban-mandal-8aa34a1ba</span>
+                </div>
+              </a>
+
+              <div class="contact-chip-item">
+                <div class="chip-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="chip-text">
+                  <span class="chip-label">LOCATION</span>
+                  <span class="chip-val">Udaipur, Tripura, India</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Interactive Direct Inquiry Form -->
+            <div class="inquiry-form-wrapper" id="contact-form-anchor">
+              <h3 class="form-title">Send a Direct Message</h3>
+              
+              <!-- Real-time submission status banner -->
+              <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
+
+              <form id="portfolio-contact-form" class="portfolio-form" action="https://formsubmit.co/anirbanmandal666@gmail.com" method="POST" novalidate>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" id="form-hidden-subject" value="New Portfolio Message for Anirban Mandal">
+                <input type="hidden" name="Submission_Date_IST" id="form-time-ist" value="">
+                <input type="hidden" name="Submission_Date_UTC" id="form-time-utc" value="">
+                <div class="form-row-dual">
+                  <div class="form-group">
+                    <label for="form-name">Your Name *</label>
+                    <input type="text" id="form-name" name="name" placeholder="e.g. John Doe" required autocomplete="name">
+                    <span class="field-error" id="name-error"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="form-email">Your Email Address *</label>
+                    <input type="email" id="form-email" name="email" placeholder="john@example.com" required autocomplete="email">
+                    <span class="field-error" id="email-error"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-subject">Subject</label>
+                  <input type="text" id="form-subject" name="subject" placeholder="Project Discussion / Hiring Opportunity">
+                </div>
+
+                <div class="form-group">
+                  <label for="form-message">Message *</label>
+                  <textarea id="form-message" name="message" rows="4" placeholder="Tell me about your requirements..." required></textarea>
+                  <span class="field-error" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary-orange btn-submit" id="submit-btn">
+                  <span>Send Message</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="card-bottom-bar">
+          <span class="card-footer-email">anirbanmandal666@gmail.com</span>
+          <a href="#home" class="scroll-scrub-indicator back-top-link">
+            <span class="scrub-label">Back to Top</span>
+            <span class="scrub-arrow">↑</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-monogram">AM</span>
+        <span class="footer-name">ANIRBAN MANDAL</span>
+      </div>
+      <p class="footer-copy">
+        © 2026 Anirban Mandal. Software Engineer | Full Stack .NET Developer. Crafted with cinematic frame-scrubbing technology.
+      </p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
