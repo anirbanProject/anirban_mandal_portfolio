@@ -1,4 +1,4 @@
-# Logs and caches
+# Logs and cache
 *.log
 contact-submissions.jsonl
 *.zip
